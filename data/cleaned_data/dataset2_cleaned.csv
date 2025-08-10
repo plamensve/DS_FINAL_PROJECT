@@ -1,4 +1,4 @@
-age,gender,cholesterol,blood_pressure,heart_rate,smoking,alcohol_intake,exercise_hours,family_history,diabetes,obesity,stress_level,blood_sugar,exercise_induced_angina,chest_pain_type,heart_disease
+age,gender,cholesterol,pressure_high,heart_rate,smoking,alcohol_intake,exercise_hours,family_history,diabetes,obesity,stress_level,blood_sugar,exercise_induced_angina,chest_pain_type,heart_disease
 75,0,228,119,66,1,2,1,0,0,1,8,119,1,atypical angina,1
 48,1,204,165,62,1,0,5,0,0,0,9,70,1,typical angina,0
 53,1,234,91,67,0,2,3,1,0,1,5,196,1,atypical angina,1
