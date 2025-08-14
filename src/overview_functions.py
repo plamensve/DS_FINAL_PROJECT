@@ -1,4 +1,5 @@
 import pandas as pd
+from matplotlib import pyplot as plt
 
 
 def convert_to_string_to_lower(dataset, column):
@@ -26,3 +27,19 @@ def convert_to_string_to_lower(dataset, column):
     dataset[column] = dataset[column].str.lower()
     return dataset[column]
 
+
+def display_column_distribution(dataset, column_name):
+    """
+    Plot a histogram showing the distribution of a specific column.
+
+    Parameters:
+        dataset (DataFrame): The dataset containing the columns.
+        column_name (str): Name of the numeric column to visualize.
+    """
+    ax = dataset[column_name].hist(figsize=(8, 6), edgecolor='black')
+    ax.set_title(f'{column_name.capitalize()} Distribution')
+    ax.set_xlabel(column_name.capitalize())
+    ax.set_ylabel('Count')
+    ax.grid(False)
+    
+    plt.show()
