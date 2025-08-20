@@ -1,0 +1,6 @@
+Feature,p-value,Significant Difference
+age,0.0,Statistically significant difference between groups
+cholesterol,0.0,Statistically significant difference between groups
+pressure_high,0.824,No significant difference between groups
+heart_rate,0.692,No significant difference between groups
+blood_sugar,0.649,No significant difference between groups

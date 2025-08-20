@@ -1,0 +1,8 @@
+Feature,p-value,Significant Difference
+age,0.0,Statistically significant difference between groups
+heart_rate,0.978,No significant difference between groups
+pressure_high,0.183,No significant difference between groups
+pressure_low,0.764,No significant difference between groups
+glucose,0.477,No significant difference between groups
+kcm,0.0,Statistically significant difference between groups
+troponin,0.0,Statistically significant difference between groups

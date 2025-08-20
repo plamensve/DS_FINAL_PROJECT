@@ -1,0 +1,7 @@
+Feature,W-Statistic,p-value,Normality
+heart_rate,0.955,0.0,No (Not Gaussian)
+pressure_high,0.972,0.0,No (Not Gaussian)
+pressure_low,0.984,0.0,No (Not Gaussian)
+glucose,0.785,0.0,No (Not Gaussian)
+kcm,0.315,0.0,No (Not Gaussian)
+troponin,0.334,0.0,No (Not Gaussian)

@@ -1,0 +1,5 @@
+Feature,W-Statistic,p-value,Normality
+cholesterol,0.953,0.0,No (Not Gaussian)
+pressure_high,0.951,0.0,No (Not Gaussian)
+heart_rate,0.955,0.0,No (Not Gaussian)
+blood_sugar,0.959,0.0,No (Not Gaussian)
