@@ -65,9 +65,19 @@ The aim is to explore, preprocess, and model the data, and finally synthesize in
 
 ---
 
-## ⚙️ Requirements  
+## ⚙️ Setup Instructions  
 
-Install dependencies with:  
-
+1. **Clone the repository**  
 ```bash
+git clone https://github.com/yourusername/DS_FINAL_PROJECT.git
+cd DS_FINAL_PROJECT
+
+On Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+
+On Windows
+python -m venv venv
+venv\Scripts\activate
+
 pip install -r requirements.txt
