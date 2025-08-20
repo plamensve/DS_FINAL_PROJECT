@@ -1,52 +1,61 @@
 # Comparative Analysis of Heart Disease Datasets with Logistic Regression and Random Forest
 
 ## Project Overview
-This project analyzes and compares two independent datasets related to **heart disease**.  
+This project performs a comparative analysis of two independent **heart disease datasets**.  
 The main objectives are:
-- Identify and evaluate key **risk factors** for heart disease.
-- Apply **statistical hypothesis testing** to explore significant differences.
+- Identify and evaluate **risk factors** for heart disease.
+- Conduct **statistical hypothesis testing** (Shapiro-Wilk, Mann-Whitney U, etc.).
 - Train and compare **Logistic Regression** and **Random Forest** models.
-- Assess model performance using metrics such as **accuracy, precision, recall, F1-score, ROC curve, and AUC**.
-- Provide a **comparative evaluation** across both datasets and models to highlight trade-offs between interpretability and predictive power.
+- Assess model performance using **accuracy, precision, recall, F1-score, ROC curve, and AUC**.
+- Provide a **comparative evaluation** of both datasets and models to highlight trade-offs between interpretability and predictive power.
 
-The project is structured for transparency and reproducibility, following a clean research workflow.
+The project follows a clean research workflow with reproducibility in mind.
 
 ---
 
-## Folder Descriptions
+## Folder Structure
 
 - **`data/`**  
-  Contains all datasets used in the project (`heart_disease_dataset.csv` and `heart.csv`) along with a `README.md` explaining the source, structure, and description of each variable.
+  Contains datasets and intermediate processed files.  
+  - `dataset_1.csv`, `dataset_2.csv` – raw datasets  
+  - `cleaned_data/`, `preprocessed_rf/` – processed data  
+  - `stats_results/` – exported test results  
+
+- **`images/`**  
+  Stores plots and confusion matrices, separated by dataset:  
+  - `dataset1_images/`  
+  - `dataset2_images/`  
 
 - **`notebooks/`**  
-  Stores all Jupyter notebooks organized by workflow stage:  
-  - `01_data_overview.ipynb` – initial dataset review and descriptive statistics  
+  Jupyter notebooks organized by workflow stage:  
+  - `01_data_overview.ipynb` – dataset overview and descriptive statistics  
   - `02_preprocessing.ipynb` – data cleaning and preparation  
-  - `03_eda_dataset1.ipynb` / `04_eda_dataset2.ipynb` – exploratory analysis for each dataset  
-  - `05_statistical_tests.ipynb` – Shapiro-Wilk, Mann-Whitney U, and other tests  
-  - `06_modeling_dataset1.ipynb` / `07_modeling_dataset2.ipynb` – model training and evaluation  
-  - `08_comparative_analysis.ipynb` – model and dataset comparison  
-  - `09_final_report.ipynb` – final conclusions and documentation for submission  
-
-- **`tests/`**  
-  Includes automated and statistical testing:  
-  - `unit_tests.py` – unit tests for Python functions  
-  - `hypothesis_tests.py` – statistical hypothesis tests  
+  - `03_eda_dataset_1.ipynb`, `04_eda_dataset_2.ipynb` – exploratory data analysis  
+  - `05_stats_tests.ipynb` – statistical hypothesis testing  
+  - `06_modeling_dataset_1_lr.ipynb`, `06_modeling_dataset_1_rf.ipynb` – Logistic Regression & Random Forest on Dataset 1  
+  - `07_modeling_dataset_2_lr.ipynb`, `07_modeling_dataset_2_rf.ipynb` – Logistic Regression & Random Forest on Dataset 2  
+  - `08_comparative_analysis.ipynb` – model comparison across datasets  
+  - `09_error_analysis.ipynb` – error and misclassification review  
+  - `10_final_report.ipynb` – consolidated conclusions  
 
 - **`src/`**  
-  Contains Python scripts with reusable functions, classes, and utility modules used across notebooks.
+  Reusable Python functions and helpers:  
+  - `overview_functions.py`  
+  - `stats_tests_functions.py`  
 
-- **`reports/`**  
-  Stores final outputs such as tables, metrics, and summary documents.
-
-- **`visuals/`**  
-  Contains saved plots, charts, and figures generated during the analysis.
-
-- **`docs/`**  
-  Holds documentation, additional notes, theoretical references, and bibliographic sources.
+- **`tests/`**  
+  Unit tests for reproducibility and validation:  
+  - `01_data_overview_unittests.py`  
+  - `eda_dataset_functions_unittests.py`  
 
 - **`requirements.txt`**  
-  Lists all Python packages and dependencies required to run the project.
+  List of dependencies required to run the project.  
+
+- **`README.md`**  
+  Project description and usage instructions.  
+
+- **`LICENSE`**  
+  License file for the project.  
 
 ---
 
@@ -68,3 +77,6 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Open Jupyter Notebook
+jupyter notebook
