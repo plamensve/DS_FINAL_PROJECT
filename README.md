@@ -65,19 +65,26 @@ The aim is to explore, preprocess, and model the data, and finally synthesize in
 
 ---
 
-## ⚙️ Setup Instructions  
+## ⚙️ Setup and Run Instructions  
 
-1. **Clone the repository**  
 ```bash
+# 1. Clone the repository
 git clone https://github.com/yourusername/DS_FINAL_PROJECT.git
 cd DS_FINAL_PROJECT
 
-On Linux/Mac
+# 2. Create and activate a virtual environment
+
+# On Linux/Mac
 python3 -m venv venv
 source venv/bin/activate
 
-On Windows
+# On Windows
 python -m venv venv
 venv\Scripts\activate
 
+# 3. Install required libraries
 pip install -r requirements.txt
+
+# 4. Start Jupyter Notebook
+jupyter notebook
+
