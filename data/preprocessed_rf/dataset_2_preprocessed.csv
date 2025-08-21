@@ -1,4 +1,4 @@
-age,gender,cholesterol,pressure_high,heart_rate,smoking,alcohol_intake,exercise_hours,family_history,diabetes,obesity,stress_level,blood_sugar,exercise_induced_angina,heart_disease,chest_pain_type_atypical angina,chest_pain_type_non-anginal pain,chest_pain_type_typical angina
+age,gender,cholesterol,pressure_high,heart_rate,smoking,alcohol_intake,exercise_hours,family_history,diabetes,obesity,stress_level,blood_sugar,exercise_induced_angina,heart_disease,chest_pain_type_atypical_angina,chest_pain_type_non_anginal_pain,chest_pain_type_typical_angina
 75,0,228,119,66,1,2,1,0,0,1,8,119,1,1,1,0,0
 48,1,204,165,62,1,0,5,0,0,0,9,70,1,0,0,0,1
 53,1,234,91,67,0,2,3,1,0,1,5,196,1,1,1,0,0
