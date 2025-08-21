@@ -1,15 +1,22 @@
 # Comparative Analysis of Heart Disease Datasets with Logistic Regression and Random Forest
 
 ## Project Overview
-This project performs a comparative analysis of two independent **heart disease datasets**.  
-The main objectives are:
-- Identify and evaluate **risk factors** for heart disease.
-- Conduct **statistical hypothesis testing** (Shapiro-Wilk, Mann-Whitney U, etc.).
-- Train and compare **Logistic Regression** and **Random Forest** models.
-- Assess model performance using **accuracy, precision, recall, F1-score, ROC curve, and AUC**.
-- Provide a **comparative evaluation** of both datasets and models to highlight trade-offs between interpretability and predictive power.
+This project performs a **comparative analysis of two independent heart disease datasets** and builds predictive models to evaluate risk factors.  
+The analysis has two main goals:
+- Explore and statistically compare **risk factors** across datasets.  
+- Train and evaluate **Logistic Regression** (interpretability) and **Random Forest** (predictive power).  
 
-The project follows a clean research workflow with reproducibility in mind.
+Additionally, the project includes a **Gradio-based interface** that allows users to test predictions for new patients using a pre-trained Random Forest model.
+
+---
+
+## Key Features
+- **Data Analysis & Preprocessing**: Cleaning, encoding, normalization, and feature engineering.  
+- **Statistical Testing**: Shapiro-Wilk, Mann-Whitney U, and others to validate differences across groups.  
+- **Modeling**: Logistic Regression & Random Forest trained on both datasets.  
+- **Evaluation**: Accuracy, Precision, Recall, F1-score, ROC curve, and AUC.  
+- **Comparative Insights**: Strengths/weaknesses of each dataset and model.  
+- **Interactive Prediction App**: Gradio interface for predicting heart disease.  
 
 ---
 
@@ -35,8 +42,10 @@ The project follows a clean research workflow with reproducibility in mind.
   - `06_modeling_dataset_1_lr.ipynb`, `06_modeling_dataset_1_rf.ipynb` – Logistic Regression & Random Forest on Dataset 1  
   - `07_modeling_dataset_2_lr.ipynb`, `07_modeling_dataset_2_rf.ipynb` – Logistic Regression & Random Forest on Dataset 2  
   - `08_comparative_analysis.ipynb` – model comparison across datasets  
-  - `09_error_analysis.ipynb` – error and misclassification review  
-  - `10_final_report.ipynb` – consolidated conclusions  
+  - `09_final_report.ipynb`
+  - `10_test_notebook.ipynb` 
+  - `11_random_forest_ds1.ipynb` – Gradio app for real-time predictions  
+  - `12_random_forest_ds2.ipynb` – Gradio app for real-time predictions  
 
 - **`src/`**  
   Reusable Python functions and helpers:  
